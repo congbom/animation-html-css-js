@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="animation.css" rel="stylesheet">
+        <title>Hello, world!</title>
+
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .section {
+                height: 100vh;
+                text-align: center;
+                padding-top: 50vh;
+                overflow: hidden;
+            }
+            .section:nth-child(2n) {
+                background: #EEE;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="section">
+            <h1 data-animation="zoom-in">Hello, world!</h1>
+            <p data-animation="fade-in">From Vietnam with ❤️</p>
+        </div>
+        <div class="section">
+            <h1 data-animation="fade-left">Hello, world!</h1>
+            <p data-animation="fade-in">From Vietnam with ❤️</p>
+        </div>
+        <div class="section">
+            <h1 data-animation="fade-right">Hello, world!</h1>
+            <p data-animation="fade-in">From Vietnam with ❤️</p>
+        </div>
+        <div class="section">
+            <h1 data-animation="fade-up">Hello, world!</h1>
+            <p data-animation="fade-in">From Vietnam with ❤️</p>
+        </div>
+        <div class="section">
+            <h1 data-animation="fade-down">Hello, world!</h1>
+            <p data-animation="fade-in">From Vietnam with ❤️</p>
+        </div>
+
+        <script src="animation.js"></script>
+  </body>
+</html>

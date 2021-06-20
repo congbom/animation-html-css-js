@@ -1,0 +1,55 @@
+@keyframes resetElement {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+[data-animation] {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+[data-animation].animated {
+    animation-name: resetElement;
+}
+
+[data-animation^="fade-"] {
+    opacity: 0;
+}
+
+[data-animation="zoom-in"] {
+    transform: scale(0);
+}
+
+[data-animation="fade-up"] {
+    transform: translateY(64px);
+}
+
+[data-animation="fade-down"] {
+    transform: translateY(-64px);
+}
+
+[data-animation="fade-left"] {
+    transform: translateX(-64px);
+}
+
+[data-animation="fade-right"] {
+    transform: translateX(64px);
+}
+
+[data-animation="move-up"] {
+    transform: translateY(64px);
+}
+
+[data-animation="move-down"] {
+    transform: translateY(-64px);
+}
+
+[data-animation="move-left"] {
+    transform: translateX(-64px);
+}
+
+[data-animation="move-right"] {
+    transform: translateX(64px);
+}
